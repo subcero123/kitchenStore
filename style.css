@@ -1,0 +1,269 @@
+.bg-lime {
+  background-color: #4cb051;
+  color: white;
+}
+
+.bg-gray {
+  background-color: #ffffff;
+}
+
+/* Cambiar color del texto de la barra de navegación a negro */
+.navbar-nav .nav-link {
+  color: black;
+  font-weight: bold;
+}
+
+/* Cambiar color del texto de la marca de la barra de navegación a negro */
+.navbar-brand {
+  color: black;
+}
+
+#container-distribution {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+#main-container {
+  text-align: center;
+  position: relative;
+}
+
+.large-text {
+  font-size: 4.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.review-container {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.oval-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.center-text {
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.gift-card {
+  width: 200px;
+}
+
+.large-text-container {
+  position: relative;
+}
+
+.large-text {
+  font-size: 4.5em; /* Corregir la coma a punto para el tamaño de la fuente */
+  margin-bottom: 20px; /* Espacio entre el texto y la imagen */
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.sarten-volteado {
+  position: absolute;
+  bottom: -150px; /* Ajusta la distancia desde la parte inferior según sea necesario */
+  left: 50%; /* Centrar la imagen horizontalmente */
+  transform: translateX(-50%) rotate(210deg); /* Centrar la imagen verticalmente y aplicar la rotación */
+  max-height: 80%;
+  z-index: 2;
+}
+
+.icon {
+  color: white;
+}
+
+.big-title {
+  font-weight: bolder;
+  font-size: 3.5em;
+}
+
+.circle-image-container {
+  width: 100px; /* Ajusta el ancho según el tamaño de tus imágenes */
+  border-radius: 50%;
+  background-color: yellow;
+  background-color: rgba(90, 182, 81); /* Ajusta la transparencia */
+  overflow: hidden; /* Oculta el desbordamiento de la imagen */
+  position: relative;
+}
+
+.circle-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+  margin: auto; /* Alinea la imagen horizontalmente */
+}
+
+.images {
+  width: 100px;
+}
+
+.corner-images {
+  position: relative;
+}
+/* Estilos comunes para todos los elementos */
+.clover,
+.peppers,
+.lettuce,
+.butterfly {
+  z-index: 2;
+}
+
+/* Estilos para dispositivos grandes */
+@media screen and (max-width: 1600px) {
+  .clover {
+    width: 50px;
+    position: absolute;
+    right: 5%;
+    bottom: 1%;
+    transform: rotate(70deg);
+  }
+
+  .peppers {
+    width: 100px;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+  }
+
+  .lettuce {
+    width: 100px;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    transform: rotate(70deg);
+  }
+
+  .butterfly {
+    width: 70px;
+    position: absolute;
+    left: 5%;
+    bottom: 1%;
+  }
+
+  .sarten1 {
+    width: 150px;
+    position: absolute;
+    right: 1%;
+    top: 10%;
+    transform: rotate(
+      -15deg
+    ); /* Centrar la imagen verticalmente y aplicar la rotación */
+    z-index: 2;
+  }
+
+  .sarten2 {
+    width: 100px;
+    position: absolute;
+    left: 1%;
+    top: 30%;
+    transform: rotate(
+      -15deg
+    ); /* Centrar la imagen verticalmente y aplicar la rotación */
+    z-index: 2;
+  }
+
+  .butterfly2 {
+    width: 70px;
+    position: absolute;
+    z-index: 2;
+    right: 18%;
+    top: 50%;
+  }
+}
+
+/* Estilos para dispositivos grandes */
+@media screen and (min-width: 1680px) {
+  .sarten1 {
+    width: 150px;
+    position: absolute;
+    right: 25%;
+    top: 10%;
+    transform: rotate(
+      -15deg
+    ); /* Centrar la imagen verticalmente y aplicar la rotación */
+    z-index: 2;
+  }
+
+  .sarten2 {
+    width: 100px;
+    position: absolute;
+    left: 25%;
+    top: 30%;
+    transform: rotate(
+      -15deg
+    ); /* Centrar la imagen verticalmente y aplicar la rotación */
+    z-index: 2;
+  }
+
+  .butterfly2 {
+    width: 70px;
+    position: absolute;
+    z-index: 2;
+    right: 35%;
+    top: 50%;
+  }
+
+  .clover {
+    width: 50px;
+    position: absolute;
+    right: 5%;
+    bottom: 1%;
+    transform: rotate(70deg);
+  }
+
+  .peppers {
+    width: 100px;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+  }
+
+  .lettuce {
+    width: 100px;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    transform: rotate(70deg);
+  }
+
+  .butterfly {
+    width: 70px;
+    position: absolute;
+    left: 5%;
+    bottom: 1%;
+  }
+}
+
+/* Estilos para dispositivos pequeños */
+@media screen and (max-width: 600px) {
+  .clover,
+  .peppers,
+  .lettuce,
+  .butterfly,
+  .butterfly2,
+  .butterfly,
+  .sarten1,
+  .sarten2 {
+    display: none;
+  }
+}
+
+.best-in{
+  color: rgba(90, 182, 81); /* Color blanco para el texto */
+  background-color: white;
+  display: inline-block; /* Permite aplicar padding y margin sin afectar al elemento bloque */
+  padding: 1px; /* Añade un poco de espacio alrededor del texto */
+  transform: rotate(-3deg); /* Rota el fondo en 45 grados */
+  font-weight: 920;
+}
